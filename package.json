@@ -1,0 +1,38 @@
+{
+  "name": "delivery-food-backend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "server:test": "nodemon server.js",
+    "server": "node server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "engines": {
+    "node": "16.13.0",
+    "npm": "8.1.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AdrianSilvadoNascimento/delivery-food-backend.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AdrianSilvadoNascimento/delivery-food-backend/issues"
+  },
+  "homepage": "https://github.com/AdrianSilvadoNascimento/delivery-food-backend#readme",
+  "dependencies": {
+    "bcrypt": "^5.0.1",
+    "body-parser": "^1.19.2",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.0",
+    "express": "^4.17.3",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^6.2.8"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.15"
+  }
+}
