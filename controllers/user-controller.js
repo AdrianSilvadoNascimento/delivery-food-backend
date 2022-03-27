@@ -46,7 +46,7 @@ exports.loginUser = async (req, res) => {
             }, 
             SECRET, { expiresIn: '1h' }
             )
-            return res.status(200).json({ token: token, userId: user._id, expiresInd: 3600 })
+            return res.status(200).json({ token: token, userId: user._id, expiresIn: 3600 })
         }
     } catch (error) {
         res.status(500).json({ message: 'An internal error has been occurred!' })
