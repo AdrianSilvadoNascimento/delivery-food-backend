@@ -7,7 +7,6 @@ require('dotenv').config({ path: 'variables.env' })
 const connectDB = require('./config/db')
 const userRoutes = require('./routes/user')
 
-const PORT = process.env.PORT || 3000
 const app = express()
 
 const bodyParserJSON = bodyParser.json()
@@ -21,6 +20,4 @@ app.use(bodyParserURLEncoded)
 
 app.use('/user', userRoutes)
 
-app.listen(PORT, () => {
-    console.log(`App started from the back-end and listening on port: ${PORT}`)
-})
+app.listen(process.env.PORT || 3000)
