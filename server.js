@@ -20,4 +20,6 @@ app.use(bodyParserURLEncoded)
 
 app.use('/user', userRoutes)
 
-app.listen(process.env.PORT || 3000)
+app.listen(process.env.PORT || 3000, () => {
+    console.log('the server has been initializated on port:', process.env.PORT || 3000)
+})
